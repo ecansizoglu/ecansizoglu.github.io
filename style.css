@@ -491,10 +491,29 @@ a.ext-link:hover,
   border-radius: 2px;
 }
 
+.research-videos {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.research-videos iframe {
+  flex: 1;
+  min-width: 200px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+
 @media (max-width: 768px) {
-  .research-body {
-    flex-direction: column;
+  .research-videos iframe {
+    min-width: 100%;
   }
+}
+
+
 
   .research-img-col {
     width: 100%;
